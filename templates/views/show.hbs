@@ -3,8 +3,6 @@
     <head>
         <title>Home</title>
         <link type="text/css" rel="stylesheet" href="/css/style.css"/>
-
-
     </head>
 
     <body>
@@ -16,6 +14,13 @@
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
             <a href="/register">Register</a>
+       </div>
+       <div>
+           {{#each data1}}
+            <p>username: {{this.username}}</p>
+            <p>email:  {{this.email}}</p>
+            <p>address:  {{this.address}}</p>
+           {{/each}}
        </div>
 
         {{>footer}}
